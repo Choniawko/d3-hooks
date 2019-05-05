@@ -6,7 +6,7 @@ export default ({ translate, height, width, data }) => {
   useEffect(() => {
     const scale = d3
       .scaleBand()
-      .padding(0.1)
+      .padding(0.02)
       .range([0, width])
       .domain(data.map(d => d.subject))
     const axis = d3.axisBottom().scale(scale)
