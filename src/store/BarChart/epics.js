@@ -4,7 +4,7 @@ import { catchError, mergeMap } from "rxjs/operators"
 import { actionCreators } from "."
 import { ajax, apiUrl } from "../../common/services"
 
-const { getData, updateData, setError } = actionCreators
+const { getData, updateData, setError, postDataElement } = actionCreators
 
 const getBarChartDataEpic = actions$ =>
 	actions$.pipe(
@@ -18,4 +18,16 @@ const getBarChartDataEpic = actions$ =>
 				),
 		),
 	)
-export default combineEpics(getBarChartDataEpic)
+const postBarChartElementEpic = actions$ =>
+	actions$.pipe(
+		ofType(postDataElement.type),
+		mergeMap(({ payload }) =>
+			ajax
+				.post(apiUrl("column"), payload)
+				.pipe(
+					mergeMap(() => of(getData.create())),
+					catchError(error => of(setError.create(error))),
+				),
+		),
+	)
+export default combineEpics(getBarChartDataEpic, postBarChartElementEpic)

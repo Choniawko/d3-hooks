@@ -1,13 +1,14 @@
 import React from "react"
 import "./index.css"
 import { Header } from "../Header"
-import { BarChart } from "../BarChart"
+import { BarChart, AddForm } from "../BarChart"
 
 function App() {
 	return (
 		<div className="App">
 			<Header />
 			<BarChart />
+			<AddForm />
 		</div>
 	)
 }

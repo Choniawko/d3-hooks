@@ -1,4 +1,5 @@
 export { default as BarChart } from "./Chart"
+export { default as AddForm } from "./AddForm"
 export { Content } from "./Content/"
 export { default as LeftAxis } from "./YAxis"
 export { default as BottomAxis } from "./XAxis"

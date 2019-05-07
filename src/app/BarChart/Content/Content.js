@@ -3,7 +3,13 @@ import * as d3 from "d3"
 import "./Content.css"
 import { Column } from "."
 
-export default ({ data, graphWidth, graphHeight, margin }) => {
+export default ({
+	data,
+	graphWidth,
+	graphHeight,
+	margin,
+	setFocusedColumn,
+}) => {
 	const x = d3
 		.scaleBand()
 		.padding(0.02)
@@ -14,8 +20,8 @@ export default ({ data, graphWidth, graphHeight, margin }) => {
 		<g transform={`translate(${margin.left},0)`} ref={ref}>
 			{data.map(item => (
 				<Column
-					key={item.subject}
-					{...{ graphHeight, item, margin, x }}
+					key={item.id}
+					{...{ graphHeight, item, margin, x, setFocusedColumn }}
 				/>
 			))}
 		</g>

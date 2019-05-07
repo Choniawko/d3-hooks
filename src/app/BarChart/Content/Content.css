@@ -1,12 +1,18 @@
 .container {
-  display: block;
-  margin: 0 auto;
-  background-color: gray;
+	display: block;
+	margin: 0 auto;
+	background-color: gray;
 }
 
 rect {
-  fill: #61dafb;
+	fill: #61dafb;
 }
 rect:hover {
-  fill: lightcyan;
+	fill: lightcyan;
+}
+
+line#limit {
+	stroke: #fed966;
+	stroke-width: 3;
+	stroke-dasharray: 3 6;
 }
