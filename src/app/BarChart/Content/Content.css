@@ -3,3 +3,10 @@
   margin: 0 auto;
   background-color: gray;
 }
+
+rect {
+  fill: #61dafb;
+}
+rect:hover {
+  fill: lightcyan;
+}
