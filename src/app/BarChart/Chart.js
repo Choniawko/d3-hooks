@@ -24,7 +24,6 @@ const BarChart = ({ getData, data, margin, graphHeight, graphWidth }) => {
 		</svg>
 	)
 }
-
 const mapStateToProps = ({
 	barChart: { data, margin, graphWidth, graphHeight },
 }) => ({
