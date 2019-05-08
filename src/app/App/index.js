@@ -2,6 +2,7 @@ import React from "react"
 import "./index.css"
 import { Header } from "../Header"
 import { BarChart, AddForm } from "../BarChart"
+import { PieChart } from "../PieChart"
 
 function App() {
 	return (
@@ -9,6 +10,7 @@ function App() {
 			<Header />
 			<BarChart />
 			<AddForm />
+			<PieChart />
 		</div>
 	)
 }

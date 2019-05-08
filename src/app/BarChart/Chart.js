@@ -12,12 +12,9 @@ const BarChart = ({
 	focusedColumn,
 	setFocusedColumn,
 }) => {
-	useEffect(
-		() => {
-			getData()
-		},
-		[getData],
-	)
+	useEffect(() => {
+		getData()
+	}, [getData])
 	return (
 		<svg height="400" width="600" className="container">
 			<LeftAxis
