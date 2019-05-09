@@ -6,7 +6,6 @@
 		"d3": "^5.9.2",
 		"react": "^16.8.6",
 		"react-dom": "^16.8.6",
-		"react-measure": "^2.3.0",
 		"react-redux": "^7.0.3",
 		"react-scripts": "3.0.0",
 		"react-spring": "^8.0.19",
@@ -26,11 +25,7 @@
 		"extends": "react-app"
 	},
 	"browserslist": {
-		"production": [
-			">0.2%",
-			"not dead",
-			"not op_mini all"
-		],
+		"production": [">0.2%", "not dead", "not op_mini all"],
 		"development": [
 			"last 1 chrome version",
 			"last 1 firefox version",
