@@ -33,6 +33,8 @@ const PieChart = ({ getData, data }) => {
 						<rect
 							x={-25}
 							y={-15}
+							rx={3}
+							ry={3}
 							width={20}
 							height={20}
 							style={{ fill: color(el.index) }}

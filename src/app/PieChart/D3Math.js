@@ -8,4 +8,5 @@ export const pie = d3
 export const path = d3
 	.arc()
 	.outerRadius(150)
-	.innerRadius(0)
+	.innerRadius(50)
+	.cornerRadius(15)
