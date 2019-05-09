@@ -14,7 +14,11 @@ export default ({ graphHeight, item, margin, x, setFocusedColumn }) => {
       y: graphHeight - item.height,
       visible: true,
     })
-    setFocusedColumn({ height: graphHeight - item.height + margin.top, subject: item.subject, visible: true })
+    setFocusedColumn({
+      height: graphHeight - item.height + margin.top,
+      subject: item.subject,
+      visible: true
+    })
   }
   const handleMouseOut = () => {
     setPoint({ ...point, visible: false })
