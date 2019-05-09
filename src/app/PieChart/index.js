@@ -1,2 +1,2 @@
 export { default as PieChart } from "./Chart"
-export * from "./D3Math"
+export { default as Legend } from "./Legend"
